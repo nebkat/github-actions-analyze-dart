@@ -27581,7 +27581,7 @@ async function analyze(workingDirectory) {
     }
   };
 
-  const args = ['--format', 'machine'];
+  const args = ['--no-fatal-warnings', '--format', 'machine'];
   args.push('.');
 
   await exec.exec('dart analyze', args, options);
